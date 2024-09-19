@@ -1,7 +1,7 @@
 
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Main from './components/main'
+import Main from './components/Main'
 
 function App() {
 

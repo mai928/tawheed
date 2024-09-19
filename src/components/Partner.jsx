@@ -41,7 +41,7 @@ const Partner = () => {
     }
 
     return (
-        <section id='partner' className=' px-5 lg:px-16'>
+        <section id='partner' className=' px-5 lg:px-16 py-10'>
             <div className='py-20'>
                 <h3 className=" text-center text-2xl lg:text-5xl lg:leading-[3.5rem] font-bold  "
                 >موزعين معتمدين للماركات التالية</h3>

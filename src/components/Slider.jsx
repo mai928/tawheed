@@ -56,7 +56,7 @@ const Slider = () => {
                                     <h2 className=' text-xl font-[700] lg:text-7xl text-white'>{(slide.title)}</h2>
                                     {/* <p className=' lg:mt-16 mb-10 text-white  font-Outfit text-[12px] lg:text-[17px]  font-semibold lg:font-bold w-[80%]'>{t(slide.details)}</p> */}
                                     <div className='mt-10 lg:mt-16 mb-10 text-white   text-[12px] lg:text-[19px]  font-semibold lg:font-bold ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((slide?.details)) }} />
-                                    <Link href={'/services'} className='bg-primary_color  text-base lg:text-xl  text-color_heading   lg:font-[600] py-2 lg:py-3 px-4 lg:px-10 rounded-md hover:bg-secondary_color'>{("أكتشف المزيد")}</Link>
+                                    <Link href={'/services'} className='bg-primary_color  text-base lg:text-xl    lg:font-[600] py-2 lg:py-2 px-4 lg:px-8 rounded-full hover:bg-secondary_color'>{("أكتشف المزيد")}</Link>
                                 </div>
                             </SwiperSlide>
                         ))

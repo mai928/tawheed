@@ -104,7 +104,8 @@ const SecondNav = () => {
                                             <div key={nav.id} className='' onClick={() => handleLink(nav.id)} >
                                                 <ul key={index} className=' '>
                                                     <li className='  text-sm font-semibold text-slate-900  relative  py-2 px-3'>
-                                                        <a className={`text-secondary_color font-bold ${nav.id === '#contact' ? 'bg-primary_color px-10 py-2 rounded-full text-[16px] ms-32' : ''}`} href={nav.id}>{(nav.name)}</a>
+                                                        <a className={`font-bold ${nav.id === '#contact' ? 'text-black relative bg-primary_color px-10 py-2 z-10 rounded-full text-[20px] ms-32 border-2 border-black ' : 'text-secondary_color '}`} href={nav.id}>{(nav.name)}</a>
+                                                      <div className={`${nav.id === '#contact'? 'bg-secondary_color absolute py-5  top-2 ms-32 z-0 rounded-full px-20':''}`}/>
                                                     </li>
                                                     <div >
                                                     </div>

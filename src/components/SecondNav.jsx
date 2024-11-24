@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ResponsiveHeader from './ResponsiveHeader';
 import { navbar } from '../data';
 import Sidebar from './Sidebar';
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo1.png'
 
 const SecondNav = () => {
 
@@ -86,7 +86,7 @@ const SecondNav = () => {
 
 
     return (
-        <section className={`px-5 lg:px-16 z-10  top-0 left-0 right-0 bottom-0 bg-black py-4  ${isFixed && ' fixed top-0 left-0 shadow-xl  h-20  '}`}>
+        <section className={`px-5 lg:px-16 z-10  top-0 left-0 right-0 bottom-0 bg-black   ${isFixed && ' fixed top-0 left-0 shadow-xl  h-20  '}`}>
 
             <div>
                 {
@@ -96,7 +96,7 @@ const SecondNav = () => {
                         ) : (
                             <div className={`flex  items-center justify-between    gap-20 `}>
                                 <Link to={'/'}>
-                                    <img width={150} height={'auto'} src={Logo} alt='Logo' />
+                                    <img width={100} height={'auto'} src={Logo} alt='Logo' />
                                 </Link>
                                 <div className='flex-1'>
                                     <div className='flex justify-center  gap-6 relative'>
@@ -104,8 +104,7 @@ const SecondNav = () => {
                                             <div key={nav.id} className='' onClick={() => handleLink(nav.id)} >
                                                 <ul key={index} className=' '>
                                                     <li className='  text-sm font-semibold text-slate-900  relative  py-2 px-3'>
-                                                        <a className={`font-bold ${nav.id === '#contact' ? 'text-black relative bg-primary_color px-10 py-2 z-10 rounded-full text-[20px] ms-32 border-2 border-black ' : 'text-secondary_color '}`} href={nav.id}>{(nav.name)}</a>
-                                                      <div className={`${nav.id === '#contact'? 'bg-secondary_color absolute py-5  top-2 ms-32 z-0 rounded-full px-20':''}`}/>
+                                                        <a className={`font-bold  text-[16px] text-secondary_color hover:text-primary_color`} href={nav.id}>{(nav.name)}</a>
                                                     </li>
                                                     <div >
                                                     </div>

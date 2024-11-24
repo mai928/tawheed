@@ -1,5 +1,5 @@
-import slider1 from "./assets/slider1.jpg";
-import slider2 from "./assets/slider2.jpeg";
+import slider1 from "./assets/slide1.jpg";
+import slider2 from "./assets/slide1.jpg";
 import service1 from "./assets/img11.png";
 import service2 from "./assets/img22.png";
 import service3 from "./assets/img33.png";
@@ -11,27 +11,20 @@ import part4 from "./assets/part4.png";
 
 export const navbar = [
 	{
-		name: "الرئيسيه",
+		name: "Home",
 		id: "/",
 	},
 	{
-		name: "من نحن",
+		name: "About Us",
 		id: "#about",
 	},
 	{
-		name: "خدماتنا",
+		name: "Videos",
 		id: "#service",
 	},
+
 	{
-		name: "صور",
-		id: "#gallary",
-	},
-	{
-		name: "موزعين معتمدين",
-		id: "#partner",
-	},
-	{
-		name: "تواصل معنا",
+		name: "Contact Us",
 		id: "#contact",
 	},
 ];
@@ -39,16 +32,9 @@ export const navbar = [
 export const sliderData = [
 	{
 		photo: slider1,
-		title: "التوحيد",
-		details:
-			"هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي ",
-	},
-	{
-		photo: slider2,
-		title: "التوحيد",
-		details:
-			"هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي ",
-	},
+		title: "Bait Cast",
+		details:'The first real estate podcast in Egypt ,  Everything that is new and important in the world of real estate in a different form and style'
+	}
 ];
 
 export const services = [

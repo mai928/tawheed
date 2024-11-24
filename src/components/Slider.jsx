@@ -46,17 +46,26 @@ const Slider = () => {
                     </>
                     {
                         sliderData.map((slide, index) => (
-                            <SwiperSlide key={index} className="swiper-slide relative">
-                                <div className='relative'>
-                                    <img className='w-full h-[60vb] lg:h-[100vb]' loading='eager' alt='img' src={slide.photo} />
+                            <SwiperSlide key={index} className="swiper-slide">
+                                <div className='relative h-[90vb] overflow-hidden'>
+                                    <img className='w-full h-full object-cover object-center' loading='eager' alt='img' src={slide.photo} />
                                     <div className='absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-40'></div>
                                 </div>
 
-                                <div key={index} className='absolute top-10 lg:top-44  lg:start-[20%] text-center lg:w-[60%]'>
-                                    <h2 className=' text-xl font-[700] lg:text-7xl text-white'>{(slide.title)}</h2>
+                                <div key={index} className='absolute top-10 lg:top-28  lg:start-[10%]  lg:w-[60%]'>
+                                    <p className='text-primary_color mb-4 font-bold text-xl'>Let’s Start Now</p>
+                                    {slide.title?.split(' ')?.map((item) =>
+                                    (
+                                        <span className='text-xl text-white font-[700] lg:text-7xl'>
+                                            <span className={`text-primary_color }`}>{item[0]}</span>
+                                           {item.slice(1) + '  '}
+                                        </span>
+                                    )
+                                    )
+                                    }
                                     {/* <p className=' lg:mt-16 mb-10 text-white  font-Outfit text-[12px] lg:text-[17px]  font-semibold lg:font-bold w-[80%]'>{t(slide.details)}</p> */}
-                                    <div className='mt-10 lg:mt-16 mb-10 text-white   text-[12px] lg:text-[19px]  font-semibold lg:font-bold ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((slide?.details)) }} />
-                                    <Link href={'/services'} className='bg-primary_color  text-base lg:text-xl    lg:font-[600] py-2 lg:py-2 px-4 lg:px-8 rounded-full hover:bg-secondary_color'>{("أكتشف المزيد")}</Link>
+                                    <div className='mt-10 lg:mt-6 mb-10 text-white   text-[12px] lg:text-[19px]  font-semibold lg:font-bold ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((slide?.details)) }} />
+                                    <Link href={'/services'} className='bg-transparent border-2 border-primary_color  text-base lg:text-lg   px-4 lg:px-4 text-white lg:py-1 rounded-lg '>{("Discover More")}</Link>
                                 </div>
                             </SwiperSlide>
                         ))

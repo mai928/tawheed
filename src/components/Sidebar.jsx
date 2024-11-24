@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { navbar } from '../data'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo1.png'
 
 const Sidebar = ({ toggle ,setToggle}) => {
   return (
@@ -30,7 +30,7 @@ const Sidebar = ({ toggle ,setToggle}) => {
 
                 <a
 
-                  className="text-black text-xl font-semibold   hover:text-primary-500"
+                  className="text-black text-xl font-semibold   hover:text-primary_color"
                   href={item.id}
                   onClick={() => setToggle(!toggle)}
                 >
